@@ -2,10 +2,13 @@ import React, { useEffect, useState } from "react";
 import './App.css';
 import SearchIcon from './search.svg';
 import MovieCard from "./MovieCard";
+import Navbar from "./Components/Navbar";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
 
  const App = () => {
+
 
     const [movies, setMovies] = useState([]);
     const [searchTerm, setSearchTerm] = useState('');
@@ -33,6 +36,10 @@ const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=f9a5299a";
 
      return(
         <div className="app">
+
+    <Router><Navbar /></Router>
+
+
             <h1>Movie Land</h1>
 
             <div className="search">
@@ -64,7 +71,6 @@ const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=f9a5299a";
                         </div>
                     )
                 }
-
            
         </div>
      );
