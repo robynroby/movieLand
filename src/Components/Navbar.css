@@ -1,5 +1,5 @@
 .navbar {
-    background-color: #212426;
+    background-color: #262929;
     margin-right: 89rem;
     margin-top: 14px;
     
@@ -9,9 +9,14 @@
     font-size: 2rem;
     background: none;
   }
+
+  .site-logo{
+    color: #1a83ff;
+    font-size: 2em;
+  }
   
   .nav-menu {
-    background-color: #212426;
+    background-color: #262929;
     width: 250px;
     height: 100vh;
     display: flex;
@@ -57,7 +62,7 @@
   }
   
   .navbar-toggle {
-    background-color: #212426;
+    background-color: #262929;
     width: 100%;
     height: 80px;
     display: flex;
@@ -67,4 +72,8 @@
   
   span {
     margin-left: 16px;
+  }
+
+  @media screen and (max-width:400px) {
+    
   }
