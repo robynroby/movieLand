@@ -3,6 +3,7 @@ import './App.css';
 import SearchIcon from './search.svg';
 import MovieCard from "./MovieCard";
 import Navbar from "./Components/Navbar";
+import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 
@@ -37,7 +38,7 @@ const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=f9a5299a";
      return(
         <div className="app">
 
-    <Router><Navbar /></Router>
+            <Router><Navbar /></Router>
 
 
             <h1>Movie Land</h1>
@@ -72,7 +73,12 @@ const API_URL = "http://www.omdbapi.com/?i=tt3896198&apikey=f9a5299a";
                     )
                 }
            
+
+
+                <Router><Footer /></Router>
+
         </div>
+        
      );
  }
 

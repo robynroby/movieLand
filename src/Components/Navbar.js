@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as FaIcons from 'react-icons/fa';
-import * as AiIcons from 'react-icons/ai';
+// import * as AiIcons from 'react-icons/ai';
 import { Link } from 'react-router-dom';
 import { SidebarData } from './SidebarData';
 import './Navbar.css';
@@ -22,7 +22,7 @@ function Navbar() {
         <nav className={sidebar ? 'nav-menu active' : 'nav-menu'}>
           <ul className='nav-menu-items'>
             <li className='navbar-toggle'>
-            <div className="site-logo"><h3>MovieLand</h3></div>
+            <div className="site-logo"><a href="#"><h3>MovieLand</h3></a></div>
             </li>
             {SidebarData.map((item, index) => {
               return (
